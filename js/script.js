@@ -71,28 +71,31 @@ $(".add").click(function () {
   let song = $(".title").val();
   mySongs.push(song);
   console.log(mySongs);
+  displaySongInfo(); 
 });
 
 $(".add").click(function () {
-  $(".songArists").empty();
+  emptySongInfo();
   let artist = $(".artist").val();
   songArtists.push(artist);
   console.log(songArtists);
-
+  displaySongInfo(); 
 });
 
 $(".add").click(function () {
-  $(".songImages").empty();
+ emptySongInfo();
   let image = $(".image").val();
   songImages.push(image);
   console.log(songImages);
+  displaySongInfo(); 
 });
 
 $(".add").click(function () {
-  $(".songLinks ").empty();
+  emptySongInfo();
   let link = $(".link").val();
   songLinks.push(link);
   console.log(songLinks);
+  displaySongInfo(); 
 });
 
 displaySongInfo(); 
