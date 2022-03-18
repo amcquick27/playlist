@@ -2,14 +2,14 @@
 let mySongs = ["WISH", "Butterflies", "Nights"];
 let songArtists = ["Denzel Curry", "MAX", "Frank Ocean"];
 let songImages = [
-  "<img src='https://images.genius.com/86e21c57ddf05f2cf02a69f8a77255d3.300x300x1.png'/>",
-  "<img src='https://images.genius.com/77586a887ddbcb821c4c8b42d9e9770c.1000x1000x1.png'/>",
-  "<img src='https://images.genius.com/626ddf4c88de200d9487bb42449d1ae3.1000x1000x1.png'/>",
+  'https://images.genius.com/86e21c57ddf05f2cf02a69f8a77255d3.300x300x1.png',
+  'https://images.genius.com/77586a887ddbcb821c4c8b42d9e9770c.1000x1000x1.png',
+  'https://images.genius.com/626ddf4c88de200d9487bb42449d1ae3.1000x1000x1.png',
 ];
 let songLinks = [
-  "<a href='https://youtu.be/pEZDFv6DNQU'>Link</a>",
-  "<a href='https://www.youtube.com/watch?v=Sa7jhh5_dQQ'>Link</a>",
-  "<a href='https://www.youtube.com/watch?v=r4l9bFqgMaQ'>Link</a>",
+  'https://youtu.be/pEZDFv6DNQU',
+  'https://www.youtube.com/watch?v=Sa7jhh5_dQQ',
+  'https://www.youtube.com/watch?v=r4l9bFqgMaQ',
 ];
 
 function displaySongInfo() {
@@ -20,10 +20,10 @@ function displaySongInfo() {
     $(".artists").append("<p>" + artist + "</p");
   });
   songImages.forEach(function (picture) {
-    $(".images").append("<p>" + picture + "</p>");
+    $(".images").append("<img src = '" + picture + "'/>");
   });
   songLinks.forEach(function (link) {
-    $(".links").append("<p>" + link + "</p>");
+    $(".links").append(`<a href='${link}'>Link</a>`);
   });
 }
 
@@ -46,20 +46,20 @@ let titles = ["song1","song2","song3"]
  let song1 = {
   song_name: "Wish",
   artist: "Denzel Curry",
-  image: "<img src='https://images.genius.com/86e21c57ddf05f2cf02a69f8a77255d3.300x300x1.png'/>",
-  watch_link: "<a href='https://youtu.be/pEZDFv6DNQU'>Link</a>"
+  image: 'https://images.genius.com/86e21c57ddf05f2cf02a69f8a77255d3.300x300x1.png',
+  watch_link: 'https://youtu.be/pEZDFv6DNQU'
  };
 let song2 ={
   song_name:"Butterflies",
   artist: "Max",
-  image: "<img src='https://images.genius.com/77586a887ddbcb821c4c8b42d9e9770c.1000x1000x1.png'/>",
-  watch_link:"<a href='https://www.youtube.com/watch?v=Sa7jhh5_dQQ'>Link</a>"
+  image: 'https://images.genius.com/77586a887ddbcb821c4c8b42d9e9770c.1000x1000x1.png',
+  watch_link:'https://www.youtube.com/watch?v=Sa7jhh5_dQQ'
 };
 let song3={
   song_name:"Nights",
   artist:"Frank Ocean",
-  image:"<img src='https://images.genius.com/626ddf4c88de200d9487bb42449d1ae3.1000x1000x1.png'/>",
-  watch_link:"<a href='https://www.youtube.com/watch?v=r4l9bFqgMaQ'>Link</a>" 
+  image:'https://images.genius.com/626ddf4c88de200d9487bb42449d1ae3.1000x1000x1.png',
+  watch_link:'https://www.youtube.com/watch?v=r4l9bFqgMaQ' 
 };
 
 function addSongInfo() {
